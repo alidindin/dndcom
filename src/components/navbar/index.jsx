@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import classNames from "classnames/bind";
-import styles from './nav.module.css';
+import styles from './nav.css';
 
 let cx = classNames.bind(styles);
 
@@ -46,9 +46,8 @@ export default class Navbar extends Component {
             <nav
                 className={className}
             >
-                <a href="#">Item 1</a>
-                <a href="#">Item 2</a>
-                <a href="#">Item 3</a>
+                <a href="index.html" className={styles.logo}><strong>Ali Din Din</strong></a>
+
             </nav>
         );
     }
