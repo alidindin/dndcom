@@ -1,0 +1,13 @@
+.navbar {
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+    top: -50px;
+    transition: top 0.6s;
+    z-index: 1000;
+    background-color: #2a2f4a;
+}
+
+.navbarHidden {
+    top: 0;
+}

@@ -1,12 +1,16 @@
 import React from 'react';
 import styles from '../../sass/main.scss';
+import custom from './custom.css';
 
 import Banner from '../banner';
+import Navbar from '../navbar';
 
 const Index = () => {
   return (
     <div>
+      <Navbar />
       <Banner />
+
       <div id="main">
         <section id="one" className={styles.tiles}>
           <article>
