@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import classNames from "classnames/bind";
 import styles from './nav.css';
-
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 let cx = classNames.bind(styles);
 
 export default class Navbar extends Component {
@@ -46,7 +46,18 @@ export default class Navbar extends Component {
             <nav
                 className={className}
             >
-                <a href="index.html" className={styles.logo}><strong>Ali Din Din</strong></a>
+                <a href="index.html" className={styles.logo}><strong>ALI DIN DIN</strong></a>
+                <ul className={styles.ulClass}>
+                    <li>
+                        <Link to="/">Home</Link>
+                    </li>
+                    <li>
+                        <Link to="/about/">About</Link>
+                    </li>
+                    <li>
+                        <Link to="/portfolio/">Portfolio</Link>
+                    </li>
+                </ul>
 
             </nav>
         );

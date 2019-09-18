@@ -31,7 +31,7 @@
     display: inline-block;
     line-height: 1.65em;
     margin-right: 0.325em;
-    padding: 0 0.125em 0 0.375em;
+    padding: 0 0.500em 0 0.375em;
 }
 
 .logo:hover strong {
@@ -40,4 +40,8 @@
 
 .logo:active strong {
     background-color: #53e3fb;
+}
+
+.ulClass {
+    list-style: none;
 }

@@ -3072,11 +3072,11 @@ button:disabled,
 }
 
 .tiles article:nth-child(6n - 3):before {
-  background-color: #ec8d81;
+  background-color: #8ea9e8;
 }
 
 .tiles article:nth-child(6n - 2):before {
-  background-color: #e7b788;
+  background-color: #6fc3df;
 }
 
 .tiles article:nth-child(6n - 1):before {
@@ -3084,7 +3084,7 @@ button:disabled,
 }
 
 .tiles article:nth-child(6n):before {
-  background-color: #87c5a4;
+  background-color: #6fc3df;
 }
 
 @media screen and (max-width: 1280px) {
@@ -3347,35 +3347,7 @@ button:disabled,
   z-index: 10000;
 }
 
-#header .logo {
-  border: 0;
-  display: inline-block;
-  font-size: 0.8em;
-  height: inherit;
-  line-height: inherit;
-  padding: 0 1.5em;
-}
 
-#header .logo strong {
-  -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  background-color: #ffffff;
-  color: #242943;
-  display: inline-block;
-  line-height: 1.65em;
-  margin-right: 0.325em;
-  padding: 0 0.125em 0 0.375em;
-}
-
-#header .logo:hover strong {
-  background-color: #9bf1ff;
-}
-
-#header .logo:active strong {
-  background-color: #53e3fb;
-}
 
 #header nav {
   display: -moz-flex;
