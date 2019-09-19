@@ -1,25 +1,41 @@
 import React from 'react';
-import styles from './banner.scss';
+import classNames from 'classnames/bind';
+import { Link } from 'react-router-dom';
 
+import styles from './banner.scss';
 import styles2 from './main.css';
 
-import classNames from "classnames/bind";
-import { Link } from 'react-router-dom';
-let cx = classNames.bind(styles2);
+const cx = classNames.bind(styles2);
 
 const Banner = () => {
-
-  let banner = cx({
+  const banner = cx({
     banner: true,
-    major: true
+    major: true,
   });
 
-  let wrapper = cx({
+  const wrapper = cx({
     wrapper: true,
-    inner: true
+    inner: true,
   });
 
+  const box = cx({
+    containerBanner: true,
+    box: true,
+  });
 
+  const featureLeft = cx({
+    feature: true,
+    featureLeft: true,
+  });
+
+  const image = cx({
+    image: true,
+  });
+
+  const content = cx({
+    feature: true,
+    featureContent: true,
+  });
 
   return (
     <div>
@@ -29,13 +45,15 @@ const Banner = () => {
             <header className={styles2.major}>
               <h1>Hi, im Ali. I create digital experiences!</h1>
             </header>
-            <div className={styles2.content}>
+            <div className={content}>
               <p>
                 Ich Studiere Interaktives Medien Design am Mediencampus Dieburg
                 / h_da Darmstadt.
                 <br />
               </p>
-                  <a href="#one" className={styles2.button + ' ' + styles2.next}><Link to="/portfolio/">Portfolio</Link></a>
+              <a href="#one" className={styles2.button + ' ' + styles2.next}>
+                <Link to="/portfolio/">Portfolio</Link>
+              </a>
             </div>
           </div>
         </div>
@@ -46,6 +64,19 @@ const Banner = () => {
             <div className={styles.big}></div>
           </div>
         </div>
+      </div>
+
+      <div className={box}>
+        <section className={featureLeft}>
+          <a href="#" className={image}>
+            <img src="images/pic01.jpg" alt="" />
+          </a>
+          <div className={styles2.content}>
+            <h3>The First Thing</h3>
+            <p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat
+              mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis fusce lacus.</p>
+          </div>
+        </section>
       </div>
     </div>
   );
