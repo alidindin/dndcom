@@ -4,6 +4,7 @@ import styles from './banner.scss';
 import styles2 from './main.css';
 
 import classNames from "classnames/bind";
+import { Link } from 'react-router-dom';
 let cx = classNames.bind(styles2);
 
 const Banner = () => {
@@ -34,7 +35,7 @@ const Banner = () => {
                 / h_da Darmstadt.
                 <br />
               </p>
-                  <a href="#one" className={styles2.button + ' ' + styles2.next}>Los gehts!</a>
+                  <a href="#one" className={styles2.button + ' ' + styles2.next}><Link to="/portfolio/">Portfolio</Link></a>
             </div>
           </div>
         </div>
