@@ -44,8 +44,8 @@
       "jsx"
     ]
   },
-  "repository": "https://github.com/HashemKhalifa/webpack-react-boilerplate",
-  "author": "HashemKhalifa",
+  "repository": "https://github.com/alidindin/dndcom",
+  "author": "Ali Dindin",
   "license": "ISC",
   "private": false,
   "engines": {

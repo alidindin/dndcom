@@ -3,29 +3,43 @@ import classNames from 'classnames/bind';
 import { Link } from 'react-router-dom';
 
 import styles from './banner.scss';
-import styles2 from './main.css';
+import css from './styles.css';
+import main from './main.css';
 
-const cx = classNames.bind(styles2);
+const cx = classNames.bind(main);
+const cxx = classNames.bind(styles);
 
 const Banner = () => {
-  const banner = cx({
+  const banner = cxx({
     banner: true,
     major: true,
   });
 
-  const wrapper = cx({
+  const wrapper = cxx({
     wrapper: true,
     inner: true,
   });
 
+  const bannerButton = cxx({
+    button: true,
+    next: true,
+    scrollly: true,
+  });
+
   const box = cx({
-    containerBanner: true,
+    container: true,
+    alt: true,
     box: true,
   });
 
   const featureLeft = cx({
     feature: true,
-    featureLeft: true,
+    left: true,
+  });
+
+  const featureRight = cx({
+    feature: true,
+    right: true,
   });
 
   const image = cx({
@@ -37,26 +51,29 @@ const Banner = () => {
     featureContent: true,
   });
 
+  const header = cx({
+    major: true,
+    container: true,
+    medium: true,
+  });
+
   return (
     <div>
-      <div className={styles.hero}>
-        <div className={banner}>
-          <div className={wrapper}>
-            <header className={styles2.major}>
-              <h1>Hi, im Ali. I create digital experiences!</h1>
-            </header>
-            <div className={content}>
-              <p>
-                Ich Studiere Interaktives Medien Design am Mediencampus Dieburg
-                / h_da Darmstadt.
-                <br />
-              </p>
-              <a href="#one" className={styles2.button + ' ' + styles2.next}>
-                <Link to="/portfolio/">Portfolio</Link>
-              </a>
-            </div>
+      <section id={main.banner} className={main.major}>
+        <div className={main.inner}>
+          <header className={main.major}>
+            <h1>Hi, im Ali. I create digital experiences!</h1>
+          </header>
+          <div className={main.content}>
+            <p>Ich Studiere Interaktives Medien Design am Mediencampus Dieburg / h_da Darmstadt.<br/>
+            </p>
+            <ul className={main.actions}>
+              <li><a href="#one" className={bannerButton}>Los geht's!</a></li>
+            </ul>
           </div>
         </div>
+      </section>
+      <div className={styles.hero}>
         <div className={styles.diagonalHeroBg}>
           <div className={styles.stars}>
             <div className={styles.small}></div>
@@ -65,16 +82,53 @@ const Banner = () => {
           </div>
         </div>
       </div>
-
+      <header className={header}>
+        <h2>
+          We conduct experiments that
+          <br />
+          may or may not seriously
+          <br />
+          break the universe
+        </h2>
+      </header>
       <div className={box}>
         <section className={featureLeft}>
-          <a href="#" className={image}>
+          <a href="#" className="image icon solid fa-signal">
             <img src="images/pic01.jpg" alt="" />
           </a>
-          <div className={styles2.content}>
+          <div className={main.content}>
             <h3>The First Thing</h3>
-            <p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat
-              mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis fusce lacus.</p>
+            <p>
+              Vitae natoque dictum etiam semper magnis enim feugiat amet
+              curabitur tempor orci penatibus. Tellus erat mauris ipsum
+              fermentum etiam vivamus eget. Nunc nibh morbi quis fusce lacus.
+            </p>
+          </div>
+        </section>
+        <section className={featureRight}>
+          <a href="#" className="image icon solid fa-code">
+            <img src="images/pic02.jpg" alt="" />
+          </a>
+          <div className={main.content}>
+            <h3>The Second Thing</h3>
+            <p>
+              Vitae natoque dictum etiam semper magnis enim feugiat amet
+              curabitur tempor orci penatibus. Tellus erat mauris ipsum
+              fermentum etiam vivamus eget. Nunc nibh morbi quis fusce lacus.
+            </p>
+          </div>
+        </section>
+        <section className={featureLeft}>
+          <a href="#" className="image icon solid fa-mobile-alt">
+            <img src="images/pic03.jpg" alt="" />
+          </a>
+          <div className={main.content}>
+            <h3>The Third Thing</h3>
+            <p>
+              Vitae natoque dictum etiam semper magnis enim feugiat amet
+              curabitur tempor orci penatibus. Tellus erat mauris ipsum
+              fermentum etiam vivamus eget. Nunc nibh morbi quis fusce lacus.
+            </p>
           </div>
         </section>
       </div>
