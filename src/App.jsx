@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { hot } from 'react-hot-loader/root';
 
-import Main from './components/main';
+import Index from './components/Index/index';
 import './sass/main.scss';
 
 class App extends Component {
@@ -11,7 +11,7 @@ class App extends Component {
   }
 
   render() {
-    return <Main />;
+    return <Index />;
   }
 }
 

@@ -66,7 +66,7 @@ $vendor-values: (
 /// Removes a specific item from a list.
 /// @author Hugo Giraudel
 /// @param {list} $list List.
-/// @param {integer} $index Index.
+/// @param {integer} $Index Index.
 /// @return {list} Updated list.
 @function remove-nth($list, $index) {
   $result: null;
@@ -220,7 +220,7 @@ $vendor-values: (
     width: $width * 0.25;
   }
 
-  // Main class.
+  // Index class.
   .container {
     @if $lock {
       width: $width !important;

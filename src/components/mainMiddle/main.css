@@ -2899,7 +2899,7 @@ input[type="button"].small,
   color: #ffffff;
 }
 
-/* Main */
+/* Index */
 
 #main {
   padding: 6em 0 5em 0;
@@ -3052,7 +3052,7 @@ input[type="button"].small,
     height: calc(230px + 4em);
   }
 
-  /* Main */
+  /* Index */
 
   #main {
     padding: 4em 0 3em 0;
@@ -3212,7 +3212,7 @@ input[type="button"].small,
     padding-bottom: 0;
   }
 
-  /* Main */
+  /* Index */
 
   #main {
     padding: 2em 0 2em 0;
@@ -3262,7 +3262,7 @@ input[type="button"].small,
     padding: 2em 1em !important;
   }
 
-  /* Main */
+  /* Index */
 
   #main {
     padding-left: 1em;

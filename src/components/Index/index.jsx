@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import NavBar from '../navbar';
-import Banner from '../banner';
+import Home from '../home';
 import Portfolio from '../portfolio';
 
 const Index = () => {
@@ -10,8 +10,8 @@ const Index = () => {
     <Router>
       <div>
         <NavBar />
-        <Route exact path="/" component={Banner} />
-        <Route path="/about" component={Banner} />
+        <Route exact path="/" component={Home} />
+        <Route path="/about" component={Home} />
         <Route path="/portfolio" component={Portfolio} />
       </div>
     </Router>

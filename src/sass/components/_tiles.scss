@@ -112,37 +112,37 @@
 
     &:nth-child(6n - 5) {
       &:before {
-        background-color: _palette(accent2);
+        background-color: _palette(accentViolet3);
       }
     }
 
     &:nth-child(6n - 4) {
       &:before {
-        background-color: _palette(accent1);
+        background-color: _palette(accentTurkis3);
       }
     }
 
     &:nth-child(6n - 3) {
       &:before {
-        background-color: _palette(accent2);
+        background-color: _palette(accentViolet2);
       }
     }
 
     &:nth-child(6n - 2) {
       &:before {
-        background-color: _palette(accent1);
+        background-color: _palette(accentTurkis2);
       }
     }
 
     &:nth-child(6n - 1) {
       &:before {
-        background-color: _palette(accent2);
+        background-color: _palette(accentViolet1);
       }
     }
 
     &:nth-child(6n) {
       &:before {
-        background-color: _palette(accent1);
+        background-color: _palette(accentTurkis1);
       }
     }
   }
