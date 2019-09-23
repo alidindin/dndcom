@@ -49,7 +49,7 @@ const MainMiddle = () => {
       <div className={box}>
         <section className={featureLeft}>
           <a href="#" className={Image1}>
-            <FontAwesomeIcon icon="code" size="lg" />
+            <FontAwesomeIcon icon="code" size="10x" transform="right-5.5 down-5.2" />
           </a>
           <div className={main.content}>
             <h3>The First Thing</h3>
@@ -62,7 +62,7 @@ const MainMiddle = () => {
         </section>
         <section className={featureRight}>
           <a href="#" className={Image1}>
-            <FontAwesomeIcon icon="pencil-ruler" />
+            <FontAwesomeIcon icon="pencil-ruler" size="10x"  transform="left-5.5 down-7.2" />
           </a>
           <div className={main.content}>
             <h3>The Second Thing</h3>
@@ -75,7 +75,7 @@ const MainMiddle = () => {
         </section>
         <section className={featureLeft}>
           <a href="#" className={Image1}>
-            <FontAwesomeIcon icon="pencil-ruler" />
+            <FontAwesomeIcon icon="pencil-ruler" size="10x"  transform="right-5.5 down-7.2" />
           </a>
           <div className={main.content}>
             <h3>The Third Thing</h3>
