@@ -17,24 +17,27 @@ const Banner = () => {
     <div>
       <div className={styles.hero}>
         <div className="container">
-        <section id={css.banner} className={css.major}>
-          <div className={css.inner}>
-            <header className={css.major}>
-              <h1>Hi, im Ali. I create digital experiences!</h1>
-            </header>
-            <div className={css.content}>
-              <p>
-                Ich Studiere Interaktives Medien Design am Mediencampus Dieburg / h_da Darmstadt.
-                <br />
-              </p>
-              <ul className={css.actions}>
-                <li>
-                  <a href="#one" className={bannerButton}>Los geht's!</a>
-                </li>
-              </ul>
+          <section id={css.banner} className={css.major}>
+            <div className={css.inner}>
+              <header className={css.major}>
+                <h1>Hi, im Ali. I create digital experiences!</h1>
+              </header>
+              <div className={css.content}>
+                <p>
+                  Ich Studiere Interaktives Medien Design am Mediencampus
+                  Dieburg / h_da Darmstadt.
+                  <br />
+                </p>
+                <ul className={css.actions}>
+                  <li>
+                    <a href="#one" className={bannerButton}>
+                      Los geht's!
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
         </div>
         <div className={styles.diagonalHeroBg}>
           <div className={styles.stars}>
