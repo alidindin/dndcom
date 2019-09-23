@@ -1,8 +1,8 @@
 import React from 'react';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames/bind';
-
 import main from './main.css';
+import Pic1 from './images/pic01.jpg';
 
 const mainBind = classNames.bind(main);
 
@@ -29,6 +29,12 @@ const MainMiddle = () => {
     medium: true,
   });
 
+  const Image1 = mainBind({
+    image: true,
+    icon: true,
+    solid: true,
+  });
+
   return (
     <div>
       <header className={header}>
@@ -42,8 +48,8 @@ const MainMiddle = () => {
       </header>
       <div className={box}>
         <section className={featureLeft}>
-          <a href="#" className="image icon solid fa-signal">
-            <img src="images/pic01.jpg" alt="" />
+          <a href="#" className={Image1}>
+            <FontAwesomeIcon icon="code" size="lg" />
           </a>
           <div className={main.content}>
             <h3>The First Thing</h3>
@@ -55,8 +61,8 @@ const MainMiddle = () => {
           </div>
         </section>
         <section className={featureRight}>
-          <a href="#" className="image icon solid fa-code">
-            <img src="images/pic02.jpg" alt="" />
+          <a href="#" className={Image1}>
+            <FontAwesomeIcon icon="pencil-ruler" />
           </a>
           <div className={main.content}>
             <h3>The Second Thing</h3>
@@ -68,8 +74,8 @@ const MainMiddle = () => {
           </div>
         </section>
         <section className={featureLeft}>
-          <a href="#" className="image icon solid fa-mobile-alt">
-            <img src="images/pic03.jpg" alt="" />
+          <a href="#" className={Image1}>
+            <FontAwesomeIcon icon="pencil-ruler" />
           </a>
           <div className={main.content}>
             <h3>The Third Thing</h3>

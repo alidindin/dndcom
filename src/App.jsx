@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { hot } from 'react-hot-loader/root';
-
 import Index from './components/Index/index';
 import './sass/main.scss';
+import './components/fontAwesome/index';
 
 class App extends Component {
   constructor(props) {

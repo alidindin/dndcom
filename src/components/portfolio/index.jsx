@@ -40,7 +40,7 @@ const Portfolio = () => {
         </article>
         <article>
           <span className={styles.image}></span>
-          <header className="major">
+          <header className={styles.major}>
             <h3>
               <a href="assets/views/joni.html" className={styles.link}>
                 Joni
@@ -51,7 +51,7 @@ const Portfolio = () => {
         </article>
         <article>
           <span className={styles.image}></span>
-          <header className="major">
+          <header className={styles.major}>
             <h3>
               <a href="assets/views/ribbonstrat.html" className={styles.link}>
                 RibbonStrat

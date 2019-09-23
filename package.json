@@ -55,6 +55,11 @@
   "dependencies": {
     "@babel/plugin-transform-react-constant-elements": "7.5.0",
     "@babel/plugin-transform-react-inline-elements": "7.2.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.24",
+    "@fortawesome/free-brands-svg-icons": "^5.11.1",
+    "@fortawesome/free-regular-svg-icons": "^5.11.1",
+    "@fortawesome/free-solid-svg-icons": "^5.11.1",
+    "@fortawesome/react-fontawesome": "^0.1.4",
     "babel-plugin-transform-react-pure-class-to-function": "1.0.1",
     "babel-plugin-transform-react-remove-prop-types": "0.4.24",
     "classnames": "^2.2.6",
