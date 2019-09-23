@@ -16,6 +16,7 @@ const Banner = () => {
   return (
     <div>
       <div className={styles.hero}>
+        <div className="container">
         <section id={css.banner} className={css.major}>
           <div className={css.inner}>
             <header className={css.major}>
@@ -34,6 +35,7 @@ const Banner = () => {
             </div>
           </div>
         </section>
+        </div>
         <div className={styles.diagonalHeroBg}>
           <div className={styles.stars}>
             <div className={styles.small}></div>
