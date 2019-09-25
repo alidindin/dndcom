@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames/bind';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import styles from './nav.css';
 
 const cx = classNames.bind(styles);
@@ -46,9 +46,9 @@ export default class Navbar extends Component {
     return (
       <nav className={className}>
         <div className={styles.alignLeft}>
-          <a href="index.html" className={styles.logo}>
+          <Link to="/" className={styles.logo}>
             <strong>ALI DIN DIN</strong>
-          </a>
+          </Link>
         </div>
         <div className={styles.alignRight}>
           <ul className={styles.ulClass}>

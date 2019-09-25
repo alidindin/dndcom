@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '../../sass/main.scss';
 import banner from './banner.scss';
+import Footer from '../footer/index';
 
 const Portfolio = () => {
   return (
@@ -119,6 +120,7 @@ const Portfolio = () => {
           </div>
         </section>
       </div>
+      <Footer />
     </div>
   );
 };
