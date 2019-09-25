@@ -76,8 +76,9 @@ input[type='email'],
 input[type='tel'],
 input[type='search'],
 input[type='url'],
-select,
-textarea {
+textarea[type="text"],
+select
+{
   @include vendor('appearance', 'none');
   background: _palette(border-bg);
   border: none;
