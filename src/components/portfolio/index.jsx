@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from '../../sass/main.scss';
 import banner from './banner.scss';
-import index from 'babel-plugin-transform-react-remove-prop-types/src';
 
 const Portfolio = () => {
   return (
@@ -9,24 +8,21 @@ const Portfolio = () => {
       <div className={banner.hero}>
         <section id="one" className={styles.tiles}>
           <article>
-            <span className={styles.image}></span>
             <header className={styles.major}>
               <h3>
-                <a href="assets/views/malie.html" className={styles.link}>Malie
+                <a href="assets/views/malie.html" className={styles.link}>
+                  Malie
                 </a>
               </h3>
               <p>Ambience intelligence</p>
             </header>
             <div className={banner.stars}>
-              <div className={banner.small}>
-                <div className={banner.medium}>
-                  <div className={banner.big}></div>
-                </div>
-              </div>
+              <div className={banner.small}></div>
+              <div className={banner.medium}></div>
+              <div className={banner.big}></div>
             </div>
           </article>
           <article>
-            <span className={styles.image}></span>
             <header className={styles.major}>
               <h3>
                 <a href="assets/views/theexplorer.html" className={styles.link}>
@@ -36,15 +32,12 @@ const Portfolio = () => {
               <p>Virtual reality / Mixed reality</p>
             </header>
             <div className={banner.stars}>
-              <div className={banner.small}>
-                <div className={banner.medium}>
-                  <div className={banner.big}></div>
-                </div>
-              </div>
+              <div className={banner.small}></div>
+              <div className={banner.medium}></div>
+              <div className={banner.big}></div>
             </div>
           </article>
           <article>
-            <span className={styles.image}></span>
             <header className={styles.major}>
               <h3>
                 <a href="assets/views/toolstream.html" className={styles.link}>
@@ -54,15 +47,12 @@ const Portfolio = () => {
               <p>Internet of things</p>
             </header>
             <div className={banner.stars}>
-              <div className={banner.small}>
-                <div className={banner.medium}>
-                  <div className={banner.big}></div>
-                </div>
-              </div>
+              <div className={banner.small}></div>
+              <div className={banner.medium}></div>
+              <div className={banner.big}></div>
             </div>
           </article>
           <article>
-            <span className={styles.image}></span>
             <header className={styles.major}>
               <h3>
                 <a href="assets/views/joni.html" className={styles.link}>
@@ -72,15 +62,12 @@ const Portfolio = () => {
               <p>Website</p>
             </header>
             <div className={banner.stars}>
-              <div className={banner.small}>
-                <div className={banner.medium}>
-                  <div className={banner.big}></div>
-                </div>
-              </div>
+              <div className={banner.small}></div>
+              <div className={banner.medium}></div>
+              <div className={banner.big}></div>
             </div>
           </article>
           <article>
-            <span className={styles.image}></span>
             <header className={styles.major}>
               <h3>
                 <a href="assets/views/ribbonstrat.html" className={styles.link}>
@@ -90,15 +77,12 @@ const Portfolio = () => {
               <p>Physical Interaction</p>
             </header>
             <div className={banner.stars}>
-              <div className={banner.small}>
-                <div className={banner.medium}>
-                  <div className={banner.big}></div>
-                </div>
-              </div>
+              <div className={banner.small}></div>
+              <div className={banner.medium}></div>
+              <div className={banner.big}></div>
             </div>
           </article>
           <article>
-            <span className={styles.image}></span>
             <header className={styles.major}>
               <h3>
                 <a
@@ -110,11 +94,9 @@ const Portfolio = () => {
               <p>interaktive Installation </p>
             </header>
             <div className={banner.stars}>
-              <div className={banner.small}>
-                <div className={banner.medium}>
-                  <div className={banner.big}></div>
-                </div>
-              </div>
+              <div className={banner.small}></div>
+              <div className={banner.medium}></div>
+              <div className={banner.big}></div>
             </div>
           </article>
         </section>

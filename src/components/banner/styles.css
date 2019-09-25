@@ -2805,7 +2805,7 @@ button:disabled,
 }
 
 .tiles article header {
-    position: relative;
+    position: absolute;
     z-index: 3;
 }
 
