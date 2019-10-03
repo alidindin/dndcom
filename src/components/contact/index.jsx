@@ -67,6 +67,7 @@ export default class Contact extends Component {
               <label htmlFor="exampleInputEmail1">Name</label>
               <input
                 type="email"
+                ref="name"
                 className="form-control"
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
