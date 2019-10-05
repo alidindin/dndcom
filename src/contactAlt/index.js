@@ -16,7 +16,7 @@ const bannerButton = cssBind({
   scrollly: true,
 });
 
-export default class Contact extends Component {
+export default class contactAlt extends Component {
   constructor(props) {
     super(props);
 
@@ -52,13 +52,45 @@ export default class Contact extends Component {
   resetForm = () => {
     const formRef = this.formRef.current;
     formRef.resetValidationState(this.state.clearInputOnReset);
-    this.setState({
-      name: '',
-      email: '',
-      subject: '',
-      message: '',
-    });
   };
+
+  handleFormSubmit(e) {
+    e.preventDefault();
+    console.log(formData);
+    alert(JSON.stringify(formData, null, 2));
+    console.log(this.state.name);
+    const jsonBody = {
+      name: this.state.name,
+      email: this.state.email,
+      subject: this.state.subject,
+      message: this.state.message,
+    };
+    console.log(jsonBody);
+    fetch('http://127.0.0.1:8000/contacts', {
+      method: 'POST',
+      body: JSON.stringify(jsonBody),
+      headers: {
+        'Content-Type': 'application/json; charset=UTF-8',
+      },
+    }); /* .then(function(response){
+          switch(response.status) {
+              case 500:
+                  alert('500');
+                  break;
+              case 400:
+                  alert('400');
+                  break;
+              case 201:
+                  alert('201');
+                  break;
+              default:
+                  break;
+          }
+      }).catch(err => {
+
+      });
+      console.log(JSON.stringify(jsonBody)); */
+  }
 
   render() {
     return (
@@ -93,9 +125,9 @@ export default class Contact extends Component {
                   id="email"
                   type="email"
                   placeholder="E-Mail"
-                  successMessage="Looks good!"
                   value={this.state.email}
                   onChange={e => this.setState({ email: e.target.value })}
+                  successMessage="Looks good!"
                   required
                 />
               </div>
@@ -122,11 +154,19 @@ export default class Contact extends Component {
                   type="text"
                   className="form-control"
                   placeholder="Message"
+                  rows="5"
                   value={this.state.message}
                   onChange={e => this.setState({ message: e.target.value })}
-                  rows="5"
                 />
               </div>
+              <button
+                type="submit"
+                className={bannerButton}
+                onClick={e => this.handleFormSubmit(e)}
+              >
+                Submit
+              </button>
+              <button>Submit</button>
               <button type="button" onClick={() => this.resetForm()}>
                 Reset
               </button>
@@ -134,7 +174,59 @@ export default class Contact extends Component {
                 Submit
               </button>
             </ValidationForm>
+            <input
+              type="email"
+              ref="name"
+              className="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Enter email"
+              value={this.state.name}
+              onChange={e => this.setState({ name: e.target.value })}
+            />
           </div>
+          <div className="form-group">
+            <label htmlFor="exampleInputEmail1">Email address</label>
+            <input
+              type="email"
+              className="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Enter email"
+              value={this.state.email}
+              onChange={e => this.setState({ email: e.target.value })}
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="exampleInputPassword1">Subject</label>
+            <input
+              type="email"
+              className="form-control"
+              id="exampleInputPassword1"
+              placeholder="Subject"
+              value={this.state.subject}
+              onChange={e => this.setState({ subject: e.target.value })}
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="exampleFormControlTextarea1">Message</label>
+            <textarea
+              type="text"
+              className="form-control"
+              id="exampleFormControlTextarea1"
+              rows="5"
+              value={this.state.message}
+              onChange={e => this.setState({ message: e.target.value })}
+            />
+          </div>
+          <button
+            type="submit"
+            href="#one"
+            className={bannerButton}
+            onClick={e => this.handleFormSubmit(e)}
+          >
+            Submit
+          </button>
         </div>
       </div>
     );

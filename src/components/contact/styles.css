@@ -152,6 +152,11 @@ body {
   box-sizing: border-box;
 }
 
+.form-control:visited {
+  color: red !important;
+}
+
+
 /* Grid */
 
 .row {
@@ -2137,6 +2142,7 @@ label {
 }
 
 input[type='text'],
+input[type='name'],
 input[type='password'],
 input[type='email'],
 input[type='tel'],
@@ -2160,6 +2166,7 @@ select {
 }
 
 input[type='text']:invalid,
+input[type='name'],
 input[type='password']:invalid,
 input[type='email']:invalid,
 input[type='tel']:invalid,
