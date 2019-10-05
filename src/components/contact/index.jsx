@@ -6,7 +6,9 @@ import {
 } from 'react-bootstrap4-form-validation';
 
 import classNames from 'classnames/bind';
+
 import css from './styles.css';
+import custom from './custom.css';
 
 const cssBind = classNames.bind(css);
 
@@ -15,6 +17,8 @@ const bannerButton = cssBind({
   next: true,
   scrollly: true,
 });
+
+
 
 export default class Contact extends Component {
   constructor(props) {
@@ -29,6 +33,7 @@ export default class Contact extends Component {
       immediate: true,
       setFocusOnError: true,
       clearInputOnReset: false,
+      emailSent: false,
     };
   }
 
@@ -43,6 +48,19 @@ export default class Contact extends Component {
         'Content-Type': 'application/json; charset=UTF-8',
       },
     });
+    this.setState({
+      name: '',
+      email: '',
+      subject: '',
+      message: '',
+      emailSent: true,
+    });
+    setTimeout(() => {
+      this.setState({
+        emailSent: false,
+      });
+    }, 3000);
+    this.resetForm();
   };
 
   handleErrorSubmit = (e, formData, errorInputs) => {
@@ -64,6 +82,9 @@ export default class Contact extends Component {
     return (
       <div>
         <div className="container">
+          <div className="alert alert-success" role="alert" style={{ display: this.state.emailSent ? 'block' : 'none' }}>
+            Your message has been successfully sent and forwarded to me.
+          </div>
           <div className="form-group">
             <ValidationForm
               onSubmit={this.handleSubmit}
@@ -127,12 +148,14 @@ export default class Contact extends Component {
                   rows="5"
                 />
               </div>
-              <button type="button" onClick={() => this.resetForm()}>
-                Reset
-              </button>
-              <button type="submit" className={bannerButton}>
-                Submit
-              </button>
+              <div className={custom.marginTop}>
+                <button type="button" className={custom.marginRight} onClick={() => this.resetForm()}>
+                  Reset
+                </button>
+                <button type="submit" className={bannerButton}>
+                  Submit
+                </button>
+              </div>
             </ValidationForm>
           </div>
         </div>
